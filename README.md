@@ -1,8 +1,8 @@
 # REACT REDUX TODOS
-`https://egghead.io/courses/getting-started-with-redux`
-`https://egghead.io/series/building-react-applications-with-idiomatic-redux`
+- [https://egghead.io/courses/getting-started-with-redux](https://egghead.io/courses/getting-started-with-redux)
+- [https://egghead.io/series/building-react-applications-with-idiomatic-redux](https://egghead.io/series/building-react-applications-with-idiomatic-redux)
 
-
+# REACT SCRIPTS
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
