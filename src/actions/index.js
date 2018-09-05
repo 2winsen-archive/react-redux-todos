@@ -1,9 +1,9 @@
 import { v4 } from 'node-uuid';
 
-export const addTodo = name => ({
+export const addTodo = text => ({
   type: 'ADD_TODO',
   id: v4(),
-  name
+  text
 });
 
 export const toggleTodo = id => ({
