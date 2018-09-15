@@ -11,15 +11,20 @@ const fakeDatabase = {
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 export const fetchTodos = filter =>
-  delay(5000).then(() => {
-    switch (filter) {
-      case 'all':
-        return fakeDatabase.todos;
-      case 'active':
-        return fakeDatabase.todos.filter(t => !t.completed);
-      case 'completed':
-        return fakeDatabase.todos.filter(t => t.completed);
-      default:
-        return new Error(`Unknown filter: ${filter}`);
-    }
-  });
+  delay(2000)
+    .then(() => {
+      if (Math.random() > 0.5) {
+        throw new Error('Boom!');
+      }
+
+      switch (filter) {
+        case 'all':
+          return fakeDatabase.todos;
+        case 'active':
+          return fakeDatabase.todos.filter(t => !t.completed);
+        case 'completed':
+          return fakeDatabase.todos.filter(t => t.completed);
+        default:
+          return new Error(`Unknown filter: ${filter}`);
+      }
+    });
